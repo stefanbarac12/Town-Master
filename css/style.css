@@ -1,0 +1,397 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,900|Slabo+27px");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.4s ease;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: 90%;
+  }
+}
+
+header {
+  background-image: url(../img/header.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+header nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 10px;
+}
+
+header nav div a {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #fff;
+  margin-left: 50px;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+}
+
+header nav ul li {
+  margin-right: 50px;
+}
+
+header nav ul li a {
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 2px;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 10px;
+}
+
+header nav ul li a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+header article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 300px;
+  color: #fff;
+}
+
+header article h1 {
+  font-size: 6rem;
+  font-weight: 400;
+  text-shadow: 2px 2px 5px #000;
+}
+
+header article p {
+  font-size: 3rem;
+  font-weight: 400;
+  text-shadow: 2px 2px 5px #000;
+}
+
+header article small {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 20px;
+  text-shadow: 2px 2px 5px #000;
+}
+
+.intro {
+  padding: 50px 0px;
+}
+
+.intro article:first-child {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.intro article:first-child div {
+  width: 40%;
+  margin: 0 30px;
+}
+
+.intro article:first-child div img {
+  width: 100%;
+}
+
+.intro article:first-child div h2 {
+  font-size: 3rem;
+  color: #3496d8;
+  margin-bottom: 20px;
+}
+
+.intro article:first-child div p {
+  color: #8f8f8f;
+}
+
+.intro article:first-child div button {
+  padding: 10px 30px;
+  background: #3496d8;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-top: 30px;
+  transition: 0.4s ease;
+}
+
+.intro article:first-child div button:hover {
+  background-color: #000;
+  color: #3496d8;
+}
+
+.intro article:last-child {
+  padding: 100px;
+  margin: 0 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.intro article:last-child div {
+  flex: 0 0 30%;
+}
+
+.intro article:last-child div h3 {
+  text-align: center;
+  color: #3496d8;
+  margin: 30px 0;
+  font-size: 2rem;
+}
+
+.intro article:last-child div i {
+  display: block;
+  text-align: center;
+  color: #3496d8;
+  font-size: 4rem;
+}
+
+.intro article:last-child div p {
+  color: #8f8f8f;
+  font-size: 0.9rem;
+}
+
+.works h2 {
+  color: #3496d8;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.works p {
+  color: #8f8f8f;
+  text-align: center;
+}
+
+.works article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: row;
+}
+
+.works article div {
+  position: relative;
+  width: 25%;
+  margin: 30px;
+  border-bottom: 10px solid #3496d8;
+}
+
+.works article div:nth-of-type(3) img {
+  height: 100%;
+}
+
+.works article div span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff;
+  background-color: #3496d886;
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+}
+
+.cta {
+  background-image: url(../img/footer.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 50px;
+}
+
+.cta h2 {
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #fff;
+}
+
+.cta h2::after {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 230px;
+  margin: 0;
+  background: #fff;
+  transform: translateY(6px);
+}
+
+.cta p {
+  color: #fff;
+  padding-top: 10px;
+  margin-bottom: 60px;
+}
+
+.cta article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding-left: 200px;
+}
+
+.cta article div {
+  color: #fff;
+  width: 50%;
+  font-size: 1.5rem;
+}
+
+.cta article div i {
+  padding-bottom: 100px;
+}
+
+.cta article div input {
+  padding: 9.9px;
+  width: 200px;
+}
+
+.cta article div button {
+  padding: 10px 30px;
+  background: #3496d8;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-top: 30px;
+  transition: 0.4s ease;
+  border-radius: 0;
+  padding: 8px 20px;
+  margin-top: 0;
+  transform: translate(-6px, 2.4px);
+}
+
+.cta article div button:hover {
+  background-color: #000;
+  color: #3496d8;
+}
+
+@media (max-width: 767px) {
+  header nav {
+    padding: 10px;
+  }
+  header nav div a {
+    margin-left: 90px;
+  }
+  header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+  }
+  header nav ul li {
+    margin: 0 5px;
+  }
+  header nav ul li a {
+    font-size: 0.8rem;
+  }
+  header article {
+    margin-top: 180px;
+  }
+  header article h1 {
+    font-size: 4rem;
+  }
+  header article p {
+    font-size: 1.4rem;
+  }
+  header article small {
+    font-size: 1rem;
+  }
+  .intro article:first-child div {
+    width: 100%;
+  }
+  .intro article:last-child {
+    padding: 100px 10px;
+    margin: 0 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .intro article:last-child div h3 {
+    font-size: 1.2rem;
+  }
+  .intro article:last-child div i {
+    font-size: 4rem;
+    margin-top: 30px;
+  }
+  .works h2 {
+    font-size: 2rem;
+  }
+  .works article div {
+    width: 100%;
+  }
+  .cta {
+    background-image: url(../img/footer.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+  }
+  .cta h2 {
+    font-size: 2rem;
+  }
+  .cta article {
+    padding-left: 30px;
+  }
+  .cta article div {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
